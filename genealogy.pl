@@ -12,14 +12,11 @@ isChildOfLisa(X) :- parent(lisa, X).
 male(adam).
 male(john).
 male(jacob).
-
 female(eve).
 female(lisa).
 female(anne).
 female(pat).
 female(carol).
-awdadasdad
+
 isGrandparent(X) :- parent(X, Y), parent(Y, pat), parent(Y, anne).
 isGrandparent(X) :- parent(X, Y), parent(Y, jacob).
-
-
