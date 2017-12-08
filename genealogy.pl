@@ -19,5 +19,4 @@ female(anne).
 female(pat).
 female(carol).
 
-isGrandparent(X) :- parent(X, Y), parent(Y, pat), parent(Y, anne).
-isGrandparent(X) :- parent(X, Y), parent(Y, jacob).
+isGrandparent(G, C) :- parent(G, P), parent(P, C).
